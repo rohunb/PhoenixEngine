@@ -1,0 +1,15 @@
+#version 330 core
+
+//in vec3 FSIn_Normal;
+in vec2 FSIn_DiffuseUVCoord;
+
+uniform sampler2D uDiffuseMap;
+
+layout (location = 0) out vec3 ColorOut;
+//layout (location = 1) out vec3 NormalOut;
+
+void main()
+{
+	ColorOut = texture(uDiffuseMap, FSIn_DiffuseUVCoord).xyz;
+	//NormalOut = normalize(FSIn_Normal);
+}

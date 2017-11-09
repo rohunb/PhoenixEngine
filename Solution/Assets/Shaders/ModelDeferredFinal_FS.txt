@@ -1,0 +1,14 @@
+#version 330 core
+
+in vec2 FSIn_TexCoord;
+
+uniform sampler2D uDiffuseMap;
+
+out vec4 Color;
+
+void main() {
+	vec2 TexCoord = FSIn_TexCoord;
+	vec3 Diffuse = texture(uDiffuseMap, TexCoord).xyz;
+
+    Color = vec4(Diffuse, 1.0);
+}

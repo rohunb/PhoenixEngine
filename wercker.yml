@@ -1,0 +1,16 @@
+box: debian
+packages:
+    - make@3.81
+    - gcc@4.9.2
+    - automake@1.11.3
+build:
+  steps:
+    - script:
+        name: install
+        code: |
+          sudo apt-get update -y
+          sudo apt-get install make g++ automake gcc-4.9-multilib g++-4.9-multilib libc6-dev-i386 freeglut3-dev -y
+          sh Tools/Werker.sh
+          cd Solution/
+          make
+          make Game

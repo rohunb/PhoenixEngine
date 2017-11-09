@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B863C073B7E7794E1FC1A47 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E4C6F00422D5CB8EF22AF /* Main.cpp */; };
+		7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA826256AA061B2111E0465 /* OpenGL.framework */; };
+		96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */; };
+		DE5FF567046E15D427DD2BA7 /* ModelConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 222AF64FEA30C01CA950248F /* ModelConverter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBB4DF9A3604AFC7CDC445DA;
+			remoteInfo = libPhoenixEngine.a;
+		};
+		EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 322BCF40927BCDCD60C76D80;
+			remoteInfo = libPhoenixEngine.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16797CD8F486630565286318 /* libPhoenixEngine.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "PhoenixEngine.xcodeproj"; path = ../PhoenixEngine/PhoenixEngine.xcodeproj; sourceTree = SOURCE_ROOT; };
+		222AF64FEA30C01CA950248F /* ModelConverter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ModelConverter.cpp; path = Source/ModelConverter/ModelConverter.cpp; sourceTree = "<group>"; };
+		5A6E4C6F00422D5CB8EF22AF /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = Source/Main.cpp; sourceTree = "<group>"; };
+		7A7CE4AEDEB3571B078C9AEE /* PhoenixBuild */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = PhoenixBuild; path = PhoenixBuild; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AA826256AA061B2111E0465 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B0E372993BFA5DE6D22B80D9 /* ModelConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ModelConverter.h; path = Source/ModelConverter/ModelConverter.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C901361EBA0D7A0BD02FCC5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */,
+				96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E41B42BB1AEAE78A2D6826B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A6E4C6F00422D5CB8EF22AF /* Main.cpp */,
+				E525FDE836BB37F553E0FC28 /* ModelConverter */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		424BE1FCFF9DDF496716703C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA826256AA061B2111E0465 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581EEAC5EA4730D22070E905 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		5996D2E6B35D5773DB3DF126 /* PhoenixBuild */ = {
+			isa = PBXGroup;
+			children = (
+				2E41B42BB1AEAE78A2D6826B /* Sources */,
+				424BE1FCFF9DDF496716703C /* Frameworks */,
+				EA8E290F7CB66F1CB2E0274F /* Products */,
+				581EEAC5EA4730D22070E905 /* Projects */,
+			);
+			name = PhoenixBuild;
+			sourceTree = "<group>";
+		};
+		CCC4D9CD9A6ECE1AF3AE280D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E525FDE836BB37F553E0FC28 /* ModelConverter */ = {
+			isa = PBXGroup;
+			children = (
+				222AF64FEA30C01CA950248F /* ModelConverter.cpp */,
+				B0E372993BFA5DE6D22B80D9 /* ModelConverter.h */,
+			);
+			name = ModelConverter;
+			sourceTree = "<group>";
+		};
+		EA8E290F7CB66F1CB2E0274F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A7CE4AEDEB3571B078C9AEE /* PhoenixBuild */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EBD81D45988DAA1818F7014 /* PhoenixBuild */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52391DD962FD5CAAC52281D /* Build configuration list for PBXNativeTarget "PhoenixBuild" */;
+			buildPhases = (
+				4AD21ABE3BDE5EAB5200B0FE /* Resources */,
+				E487A275D593E662EBB638B5 /* Sources */,
+				C901361EBA0D7A0BD02FCC5E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D29A4763AD398C39412F2B6 /* PBXTargetDependency */,
+			);
+			name = PhoenixBuild;
+			productInstallPath = "$(HOME)/bin";
+			productName = PhoenixBuild;
+			productReference = 7A7CE4AEDEB3571B078C9AEE /* PhoenixBuild */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "PhoenixBuild" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 5996D2E6B35D5773DB3DF126 /* PhoenixBuild */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCC4D9CD9A6ECE1AF3AE280D /* Products */;
+					ProjectRef = 16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4EBD81D45988DAA1818F7014 /* PhoenixBuild */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhoenixEngine.a;
+			remoteRef = D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AD21ABE3BDE5EAB5200B0FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E487A275D593E662EBB638B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B863C073B7E7794E1FC1A47 /* Main.cpp in Sources */,
+				DE5FF567046E15D427DD2BA7 /* ModelConverter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D29A4763AD398C39412F2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libPhoenixEngine.a;
+			targetProxy = EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		802E14DE3114338B2C069B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Release;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = PhoenixBuild;
+			};
+			name = Release;
+		};
+		A569C5AE09A0381B32797BEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Release.x64/Assimp,
+					../Libraries/Lib/Release.x64/GLEW,
+					../Libraries/Lib/Release.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Release/FBX,
+					../Libraries/Lib/Release/IrrKlang,
+					../Libraries/Lib/Release/SOIL,
+				);
+				OBJROOT = obj/x64/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Release;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					../Game/Source,
+					../PhoenixTests/Source,
+					Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Release;
+		};
+		ACD538B412022BE13A025EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Debug.x64/Assimp,
+					../Libraries/Lib/Debug.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Debug/FBX,
+					../Libraries/Lib/Debug/IrrKlang,
+					../Libraries/Lib/Debug/SOIL,
+				);
+				OBJROOT = obj/x64/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Debug;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					../Game/Source,
+					../PhoenixTests/Source,
+					Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Debug;
+		};
+		CEF187640C7616D192737DA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Debug;
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = PhoenixBuild;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "PhoenixBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACD538B412022BE13A025EF4 /* Debug */,
+				ACD538B412022BE13A025EF4 /* Debug */,
+				A569C5AE09A0381B32797BEE /* Release */,
+				A569C5AE09A0381B32797BEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A52391DD962FD5CAAC52281D /* Build configuration list for PBXNativeTarget "PhoenixBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF187640C7616D192737DA4 /* Debug */,
+				CEF187640C7616D192737DA4 /* Debug */,
+				802E14DE3114338B2C069B1E /* Release */,
+				802E14DE3114338B2C069B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

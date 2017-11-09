@@ -1,0 +1,18 @@
+#version 330 core
+
+layout (location = 0) in vec3 Position;
+layout (location = 1) in vec3 Normal;
+layout (location = 2) in vec2 DiffuseTexCoord;
+
+uniform mat4 uWorldViewProjection;
+uniform vec3 uOrigin;
+//uniform mat3 uInverseTransposeWorld;
+
+//out vec3 FSIn_Normal;
+out vec2 FSIn_DiffuseUVCoord;
+
+void main() {
+    gl_Position = uWorldViewProjection * vec4(Position - uOrigin, 1.0) + vec4(uOrigin, 0.0);
+	//FSIn_Normal = uInverseTransposeWorld * Normal;
+    FSIn_DiffuseUVCoord = DiffuseTexCoord;
+}

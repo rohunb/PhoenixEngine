@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FD93EF167A70EBEF8E9ED31 /* TestSuite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51C3D2B930C37FE6A6F578F9 /* TestSuite.cpp */; };
+		7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA826256AA061B2111E0465 /* OpenGL.framework */; };
+		8A08F887B8967114BE9916C7 /* TestMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47F124EFCAD9A2DC4C043B2F /* TestMain.cpp */; };
+		96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */; };
+		A5069808699F7A5578ED6648 /* SerializationTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17426950F95A58FDB4E62F90 /* SerializationTest.cpp */; };
+		AE1D094C959BB159F1F5878C /* MetaProgrammingTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F7D140879BA8162BEF354 /* MetaProgrammingTest.cpp */; };
+		D25CFEBFBB6CB44C4B475CFF /* ECSTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF592B6764A34654173E81A7 /* ECSTest.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBB4DF9A3604AFC7CDC445DA;
+			remoteInfo = libPhoenixEngine.a;
+		};
+		EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 322BCF40927BCDCD60C76D80;
+			remoteInfo = libPhoenixEngine.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16797CD8F486630565286318 /* libPhoenixEngine.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "PhoenixEngine.xcodeproj"; path = ../PhoenixEngine/PhoenixEngine.xcodeproj; sourceTree = SOURCE_ROOT; };
+		17426950F95A58FDB4E62F90 /* SerializationTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SerializationTest.cpp; path = Source/Tests/Serialization/SerializationTest.cpp; sourceTree = "<group>"; };
+		22FACD1AF43BEE477335735A /* SerializationTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SerializationTest.h; path = Source/Tests/Serialization/SerializationTest.h; sourceTree = "<group>"; };
+		47F124EFCAD9A2DC4C043B2F /* TestMain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TestMain.cpp; path = Source/TestMain.cpp; sourceTree = "<group>"; };
+		51C3D2B930C37FE6A6F578F9 /* TestSuite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = TestSuite.cpp; path = Source/TestSuite.cpp; sourceTree = "<group>"; };
+		55B633C3069C5270018EBA03 /* TestSuite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestSuite.h; path = Source/TestSuite.h; sourceTree = "<group>"; };
+		6664DF5E2E376E4BFC13359E /* MetaProgrammingTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MetaProgrammingTest.h; path = Source/Tests/MetaProgramming/MetaProgrammingTest.h; sourceTree = "<group>"; };
+		8AA826256AA061B2111E0465 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8D4F7D140879BA8162BEF354 /* MetaProgrammingTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MetaProgrammingTest.cpp; path = Source/Tests/MetaProgramming/MetaProgrammingTest.cpp; sourceTree = "<group>"; };
+		CCD882D1310EF53E59E83911 /* PhoenixTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = PhoenixTests; path = PhoenixTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF27DB179922A1E4426B3F1 /* ECSTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ECSTest.h; path = Source/Tests/ECS/ECSTest.h; sourceTree = "<group>"; };
+		DF592B6764A34654173E81A7 /* ECSTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ECSTest.cpp; path = Source/Tests/ECS/ECSTest.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD753AC19E817EAEB4A3D101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */,
+				96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2CE74E0831A75B4C33658E /* ECS */ = {
+			isa = PBXGroup;
+			children = (
+				DF592B6764A34654173E81A7 /* ECSTest.cpp */,
+				DBF27DB179922A1E4426B3F1 /* ECSTest.h */,
+			);
+			name = ECS;
+			sourceTree = "<group>";
+		};
+		2E41B42BB1AEAE78A2D6826B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				47F124EFCAD9A2DC4C043B2F /* TestMain.cpp */,
+				51C3D2B930C37FE6A6F578F9 /* TestSuite.cpp */,
+				55B633C3069C5270018EBA03 /* TestSuite.h */,
+				C59D21FCD0687AC9F86F103C /* Tests */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		424BE1FCFF9DDF496716703C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA826256AA061B2111E0465 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581EEAC5EA4730D22070E905 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		592AFC4C8BABF35979203A8C /* MetaProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				8D4F7D140879BA8162BEF354 /* MetaProgrammingTest.cpp */,
+				6664DF5E2E376E4BFC13359E /* MetaProgrammingTest.h */,
+			);
+			name = MetaProgramming;
+			sourceTree = "<group>";
+		};
+		B801C6B4E68F3F41EC91E4F4 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				17426950F95A58FDB4E62F90 /* SerializationTest.cpp */,
+				22FACD1AF43BEE477335735A /* SerializationTest.h */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		C59D21FCD0687AC9F86F103C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1D2CE74E0831A75B4C33658E /* ECS */,
+				592AFC4C8BABF35979203A8C /* MetaProgramming */,
+				B801C6B4E68F3F41EC91E4F4 /* Serialization */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		CCC4D9CD9A6ECE1AF3AE280D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF3018E938F69D7660D73729 /* PhoenixTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E41B42BB1AEAE78A2D6826B /* Sources */,
+				424BE1FCFF9DDF496716703C /* Frameworks */,
+				EA8E290F7CB66F1CB2E0274F /* Products */,
+				581EEAC5EA4730D22070E905 /* Projects */,
+			);
+			name = PhoenixTests;
+			sourceTree = "<group>";
+		};
+		EA8E290F7CB66F1CB2E0274F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD882D1310EF53E59E83911 /* PhoenixTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		513C67975C07C064840E55D7 /* PhoenixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 899796807AA3DA6D90C62CC0 /* Build configuration list for PBXNativeTarget "PhoenixTests" */;
+			buildPhases = (
+				2F461F612052634E3674B5A1 /* Resources */,
+				C8FBA718BA07EB05D02A3D58 /* Sources */,
+				AD753AC19E817EAEB4A3D101 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D29A4763AD398C39412F2B6 /* PBXTargetDependency */,
+			);
+			name = PhoenixTests;
+			productInstallPath = "$(HOME)/bin";
+			productName = PhoenixTests;
+			productReference = CCD882D1310EF53E59E83911 /* PhoenixTests */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "PhoenixTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = DF3018E938F69D7660D73729 /* PhoenixTests */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCC4D9CD9A6ECE1AF3AE280D /* Products */;
+					ProjectRef = 16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				513C67975C07C064840E55D7 /* PhoenixTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhoenixEngine.a;
+			remoteRef = D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F461F612052634E3674B5A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8FBA718BA07EB05D02A3D58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A08F887B8967114BE9916C7 /* TestMain.cpp in Sources */,
+				5FD93EF167A70EBEF8E9ED31 /* TestSuite.cpp in Sources */,
+				D25CFEBFBB6CB44C4B475CFF /* ECSTest.cpp in Sources */,
+				AE1D094C959BB159F1F5878C /* MetaProgrammingTest.cpp in Sources */,
+				A5069808699F7A5578ED6648 /* SerializationTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D29A4763AD398C39412F2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libPhoenixEngine.a;
+			targetProxy = EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		070E9887449327F4CA908EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Debug;
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = PhoenixTests;
+			};
+			name = Debug;
+		};
+		33D3FAC1E4BA196EDFAC8101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Release;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = PhoenixTests;
+			};
+			name = Release;
+		};
+		7E5CF217E389E5440B8A1857 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Debug.x64/Assimp,
+					../Libraries/Lib/Debug.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Debug/FBX,
+					../Libraries/Lib/Debug/IrrKlang,
+					../Libraries/Lib/Debug/SOIL,
+				);
+				OBJROOT = obj/x64/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Debug;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					../Game/Source,
+					Source,
+					../PhoenixBuild/Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Debug;
+		};
+		F7C563D15BFBD63E84D51A11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Release.x64/Assimp,
+					../Libraries/Lib/Release.x64/GLEW,
+					../Libraries/Lib/Release.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Release/FBX,
+					../Libraries/Lib/Release/IrrKlang,
+					../Libraries/Lib/Release/SOIL,
+				);
+				OBJROOT = obj/x64/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Release;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					../Game/Source,
+					Source,
+					../PhoenixBuild/Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "PhoenixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E5CF217E389E5440B8A1857 /* Debug */,
+				7E5CF217E389E5440B8A1857 /* Debug */,
+				F7C563D15BFBD63E84D51A11 /* Release */,
+				F7C563D15BFBD63E84D51A11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		899796807AA3DA6D90C62CC0 /* Build configuration list for PBXNativeTarget "PhoenixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				070E9887449327F4CA908EC7 /* Debug */,
+				070E9887449327F4CA908EC7 /* Debug */,
+				33D3FAC1E4BA196EDFAC8101 /* Release */,
+				33D3FAC1E4BA196EDFAC8101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

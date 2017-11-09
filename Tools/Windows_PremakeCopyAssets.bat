@@ -1,0 +1,1 @@
+premake5 --file=../Solution/Premake_CopyAssets.lua

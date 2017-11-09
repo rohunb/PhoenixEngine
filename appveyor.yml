@@ -1,0 +1,13 @@
+version: 1.0.{build}
+os: Visual Studio 2015
+build:
+  project: Solution/PhoenixEngine.sln
+  parallel: true
+  verbosity: normal
+  
+before_build:
+  - 7z x Solution/Libraries/Lib/Debug.x32/FBX/libfbxsdk-md.7z -oSolution/Libraries/Lib/Debug.x32/FBX/ -y
+  - 7z x Solution/Libraries/Lib/Release.x32/FBX/libfbxsdk-md.7z -oSolution/Libraries/Lib/Release.x32/FBX/ -y
+  - cd Tools/
+  - premake5.exe --file=../Solution/Premake.lua vs2015
+  - cd ../

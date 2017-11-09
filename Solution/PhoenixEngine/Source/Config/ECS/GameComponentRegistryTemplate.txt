@@ -1,0 +1,35 @@
+/*
+
+#ifndef PHOENIX_GAME_COMPONENTS_REGISTRY_H
+#define PHOENIX_GAME_COMPONENTS_REGISTRY_H
+
+#include "Config/ECS/GameComponentIncludes.h"
+#include "Config/ECS/EngineComponentIncludes.h"
+#include "Utility/MetaProgramming/TypeList.h"
+
+namespace Phoenix
+{
+	/*! \brief Defines all the Components, Tags, Requirements and Systems used by game code
+	*	\ The types already defined in this template (GameComponentList, GameTagList,	GameRequirementList and GameSystemList)
+	*	\ Must not be changed
+	*/
+	
+	struct FGameComponentRegistry
+	{
+		//List of all Components defined in the Game
+		using GameComponentList = TTypeList<>;
+
+		//List of all Tags defined in the Game
+		using GameTagList = TTypeList<>;
+		
+		//Declare Requirements for Game Systems
+		using GameRequirementList = TTypeList<>;
+
+		//Declare Game Systems
+		using GameSystemList = TTypeList<>;
+	};
+}
+
+#endif
+
+*/

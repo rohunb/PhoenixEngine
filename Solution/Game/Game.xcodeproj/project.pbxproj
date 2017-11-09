@@ -1,0 +1,419 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B863C073B7E7794E1FC1A47 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E4C6F00422D5CB8EF22AF /* Main.cpp */; };
+		6446C5A54A83AC12609F7BE5 /* StartScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CD4A92D34A278FAC5E5576D /* StartScene.cpp */; };
+		7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA826256AA061B2111E0465 /* OpenGL.framework */; };
+		96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CBB4DF9A3604AFC7CDC445DA;
+			remoteInfo = libPhoenixEngine.a;
+		};
+		EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16797CD8F486630565286318 /* ../PhoenixEngine/PhoenixEngine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 322BCF40927BCDCD60C76D80;
+			remoteInfo = libPhoenixEngine.a;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16797CD8F486630565286318 /* libPhoenixEngine.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "PhoenixEngine.xcodeproj"; path = ../PhoenixEngine/PhoenixEngine.xcodeproj; sourceTree = SOURCE_ROOT; };
+		1E66DC78C85F9465585E72B8 /* SGolemCannon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SGolemCannon.h; path = Source/GameSystems/SGolemCannon.h; sourceTree = "<group>"; };
+		2CD4A92D34A278FAC5E5576D /* StartScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StartScene.cpp; path = Source/Scenes/StartScene.cpp; sourceTree = "<group>"; };
+		4408FDB74FD4EF044D7C8BF7 /* StartScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StartScene.h; path = Source/Scenes/StartScene.h; sourceTree = "<group>"; };
+		5349656401231971DAB8E3A4 /* CMoveSideways.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CMoveSideways.h; path = Source/GameComponents/CMoveSideways.h; sourceTree = "<group>"; };
+		542ACBBC00A9BE49E7AF69FC /* CGolemSpawnTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGolemSpawnTime.h; path = Source/GameComponents/CGolemSpawnTime.h; sourceTree = "<group>"; };
+		5A6E4C6F00422D5CB8EF22AF /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = Source/Main.cpp; sourceTree = "<group>"; };
+		72034534489E338164411374 /* CMoveSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CMoveSpeed.h; path = Source/GameComponents/CMoveSpeed.h; sourceTree = "<group>"; };
+		8A092B46F5DC7813E7041986 /* CGolemCannon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CGolemCannon.h; path = Source/GameComponents/CGolemCannon.h; sourceTree = "<group>"; };
+		8A6241FC495794C985C8B03C /* Tags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tags.h; path = Source/GameComponents/Tags.h; sourceTree = "<group>"; };
+		8AA826256AA061B2111E0465 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		C25BDEFE6C5496EBFC53753E /* SMoveOnInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMoveOnInput.h; path = Source/GameSystems/SMoveOnInput.h; sourceTree = "<group>"; };
+		C58D7ED6B381D3C30FD75516 /* STimedSpawnGolem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = STimedSpawnGolem.h; path = Source/GameSystems/STimedSpawnGolem.h; sourceTree = "<group>"; };
+		C7D6578404339BB1CBEEBDC4 /* STimedDestruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = STimedDestruction.h; path = Source/GameSystems/STimedDestruction.h; sourceTree = "<group>"; };
+		C98FA8EC4C2F8199E82CAF2C /* SRandomSpin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SRandomSpin.h; path = Source/GameSystems/SRandomSpin.h; sourceTree = "<group>"; };
+		D19CFADD6652504A567A711D /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Game; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5987552C637E65FCAC23392 /* CTimedDestruction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CTimedDestruction.h; path = Source/GameComponents/CTimedDestruction.h; sourceTree = "<group>"; };
+		EAE25D36F5E8C46381188376 /* SMoveSideways.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SMoveSideways.h; path = Source/GameSystems/SMoveSideways.h; sourceTree = "<group>"; };
+		F990A7BAE2A05D47727B05FA /* CRandomSpin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CRandomSpin.h; path = Source/GameComponents/CRandomSpin.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC878CCD141933BA6AA3E30D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D83591D7DBFE34A44173F5D /* OpenGL.framework in Frameworks */,
+				96B797B94ED16506A62625F9 /* libPhoenixEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232483DAF0CE78274A0DD21A /* GameSystems */ = {
+			isa = PBXGroup;
+			children = (
+				1E66DC78C85F9465585E72B8 /* SGolemCannon.h */,
+				C25BDEFE6C5496EBFC53753E /* SMoveOnInput.h */,
+				EAE25D36F5E8C46381188376 /* SMoveSideways.h */,
+				C98FA8EC4C2F8199E82CAF2C /* SRandomSpin.h */,
+				C7D6578404339BB1CBEEBDC4 /* STimedDestruction.h */,
+				C58D7ED6B381D3C30FD75516 /* STimedSpawnGolem.h */,
+			);
+			name = GameSystems;
+			sourceTree = "<group>";
+		};
+		28EABE167A7FF82397A5BC56 /* GameComponents */ = {
+			isa = PBXGroup;
+			children = (
+				8A092B46F5DC7813E7041986 /* CGolemCannon.h */,
+				542ACBBC00A9BE49E7AF69FC /* CGolemSpawnTime.h */,
+				5349656401231971DAB8E3A4 /* CMoveSideways.h */,
+				72034534489E338164411374 /* CMoveSpeed.h */,
+				F990A7BAE2A05D47727B05FA /* CRandomSpin.h */,
+				E5987552C637E65FCAC23392 /* CTimedDestruction.h */,
+				8A6241FC495794C985C8B03C /* Tags.h */,
+			);
+			name = GameComponents;
+			sourceTree = "<group>";
+		};
+		2E41B42BB1AEAE78A2D6826B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28EABE167A7FF82397A5BC56 /* GameComponents */,
+				232483DAF0CE78274A0DD21A /* GameSystems */,
+				5A6E4C6F00422D5CB8EF22AF /* Main.cpp */,
+				EE5C45D8D96105E51D62C418 /* Scenes */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		424BE1FCFF9DDF496716703C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AA826256AA061B2111E0465 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581EEAC5EA4730D22070E905 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		C9A7E075628D28027634BEB5 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2E41B42BB1AEAE78A2D6826B /* Sources */,
+				424BE1FCFF9DDF496716703C /* Frameworks */,
+				EA8E290F7CB66F1CB2E0274F /* Products */,
+				581EEAC5EA4730D22070E905 /* Projects */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		CCC4D9CD9A6ECE1AF3AE280D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA8E290F7CB66F1CB2E0274F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19CFADD6652504A567A711D /* Game */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE5C45D8D96105E51D62C418 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2CD4A92D34A278FAC5E5576D /* StartScene.cpp */,
+				4408FDB74FD4EF044D7C8BF7 /* StartScene.h */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC0C0E23E185E9F083F3BC63 /* Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A9E88CF03B8F7946C63ECC /* Build configuration list for PBXNativeTarget "Game" */;
+			buildPhases = (
+				2E58716D95EA185AEC74C7AD /* Resources */,
+				C80DF9242F9FA011862A4F64 /* Sources */,
+				AC878CCD141933BA6AA3E30D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D29A4763AD398C39412F2B6 /* PBXTargetDependency */,
+			);
+			name = Game;
+			productInstallPath = "$(HOME)/bin";
+			productName = Game;
+			productReference = D19CFADD6652504A567A711D /* Game */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = C9A7E075628D28027634BEB5 /* Game */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCC4D9CD9A6ECE1AF3AE280D /* Products */;
+					ProjectRef = 16797CD8F486630565286318 /* PhoenixEngine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FC0C0E23E185E9F083F3BC63 /* Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D59D3015BA64DAE30CD5941 /* libPhoenixEngine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhoenixEngine.a;
+			remoteRef = D37A6AED5662E8DAD78D812D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E58716D95EA185AEC74C7AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C80DF9242F9FA011862A4F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B863C073B7E7794E1FC1A47 /* Main.cpp in Sources */,
+				6446C5A54A83AC12609F7BE5 /* StartScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D29A4763AD398C39412F2B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libPhoenixEngine.a;
+			targetProxy = EAF165266DD9E313EF047B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AA05C93BED6CF00E7B012D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Debug;
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = Game;
+			};
+			name = Debug;
+		};
+		8B4BF7231DE30D5041D6DD63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Debug.x64/Assimp,
+					../Libraries/Lib/Debug.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Debug/FBX,
+					../Libraries/Lib/Debug/IrrKlang,
+					../Libraries/Lib/Debug/SOIL,
+				);
+				OBJROOT = obj/x64/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Debug;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					Source,
+					../PhoenixTests/Source,
+					../PhoenixBuild/Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Debug;
+		};
+		B2E6F1CDFE83B37AC2BD380D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../Build/Release;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = Game;
+			};
+			name = Release;
+		};
+		FC89DBDD913F314A8167521D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../Libraries/Include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../Libraries/Lib/Release.x64/Assimp,
+					../Libraries/Lib/Release.x64/GLEW,
+					../Libraries/Lib/Release.x64/IrrKlang,
+					/usr/local/lib,
+					../Libraries/Lib/Release/FBX,
+					../Libraries/Lib/Release/IrrKlang,
+					../Libraries/Lib/Release/SOIL,
+				);
+				OBJROOT = obj/x64/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+					"-lirrklang",
+					"-lglew",
+					"-lsoil",
+					"-lassimp",
+					"-lfbxsdk",
+					"-lBulletCollision",
+					"-lBulletDynamics",
+					"-lLinearMath",
+					"-std=c++1y",
+					"-stdlib=libc++",
+				);
+				SYMROOT = ../Build/Release;
+				USER_HEADER_SEARCH_PATHS = (
+					../PhoenixEngine/Source,
+					Source,
+					../PhoenixTests/Source,
+					../PhoenixBuild/Source,
+					../Libraries/Include,
+					../Libraries/Include/FBX,
+					../Libraries/Include/GLM,
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B4BF7231DE30D5041D6DD63 /* Debug */,
+				8B4BF7231DE30D5041D6DD63 /* Debug */,
+				FC89DBDD913F314A8167521D /* Release */,
+				FC89DBDD913F314A8167521D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		88A9E88CF03B8F7946C63ECC /* Build configuration list for PBXNativeTarget "Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA05C93BED6CF00E7B012D3 /* Debug */,
+				5AA05C93BED6CF00E7B012D3 /* Debug */,
+				B2E6F1CDFE83B37AC2BD380D /* Release */,
+				B2E6F1CDFE83B37AC2BD380D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

@@ -1,0 +1,75 @@
+Solution/CMakeCache.txt
+Solution/Debug
+Solution/Release
+Solution/PhoenixEngine/Debug
+Solution/PhoenixEngine/Release
+Solution/Game/Debug
+Solution/Game/Release
+
+#Assets
+Solution/Assets/DeprecatedShaders
+Solution/Assets/Materials
+
+#Libs
+Solution/x64/Debug/PhoenixEngine.lib
+Solution/Libraries/Lib/Debug.x32/FBX/libfbxsdk-md.lib
+Solution/Libraries/Lib/Release.x32/FBX/libfbxsdk-md.lib
+
+#PDBs
+PhoenixEngine.pdb
+vc140.pdb
+
+**/Build
+**/obj/Debug
+**/obj/Release
+**/obj/x32/Debug
+**/obj/x32/Release
+
+#VS stuff
+*.vcxproj
+*.vcxproj*
+*.sln
+*.user
+*.sdf
+*.opensdf
+*.suo
+*.cmake
+*.tlog
+*.idb
+*.enc
+*.log
+*.ipch
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+#*.so
+#*.dylib
+#*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+#*.lib
+
+# Executables
+*.exe
+!Premake5.exe
+*.out
+*.app
+
+# Misc Files
+Log.txt
+*nativecodeanalysis*.xml

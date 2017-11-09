@@ -1,0 +1,79 @@
+#include "Utility/Containers/Vector.h"
+#include "Utility/Misc/Primitives.h"
+#include "Utility/Misc/String.h"
+
+namespace Phoenix
+{
+	struct FTestClass
+	{
+		bool BoolValue;
+		Int32 IntNum;
+		Float32 FloatNum;
+		FString String;
+		TVector<Int32> IntVector;
+
+		//The Serializer will call into this method to Serialize whichever members the user chooses
+		//The compiler will indicate if this method is not provided for a user defined class that needs to be serialized
+		template<typename S>
+		void Serialize(S& Serializer)
+		{
+			Serializer.Serialize(BoolValue, IntNum, FloatNum, String, IntVector);
+		}
+
+		//Just for easy comparison
+		bool operator == (const FTestClass& RHS) const
+		{
+			return BoolValue == RHS.BoolValue
+				&& IntNum == RHS.IntNum
+				&& FloatNum == RHS.FloatNum
+				&& String == RHS.String
+				&& IntVector == RHS.IntVector;
+		}
+	};
+}
+
+//Includes are below simply to demonstrate that the user defined class does not need to include the Serializer files
+//only whoever is actually calling for the object to be serialized
+#include "Utility/Debug/Assert.h"
+#include "Utility/FileIO/File.h"
+#include "Utility/Serialization/BinarySerializer.h"
+#include "Utility/Serialization/BinaryDeserializer.h"
+
+int main()
+{
+	using namespace Phoenix;
+
+	const FString SaveFileName { "Test.dat" };
+
+	//Serializing: 
+
+		//Fstream should be initialized in binary mode
+		FOutputFileStream OutStream { SaveFileName, FFile::EFileOpenMode::Binary };
+		//Initialize the Serializer with an ofstream
+		FBinarySerializer Serializer { OutStream };
+
+		FTestClass OutData { false, 6, 4.5f, "abcd", {2, 4, 5} };
+
+		//Call serialize and pass the object to serialize.
+		//Requires the type to have a Serialize method defined, as shown above
+		Serializer.Serialize(OutData);
+
+		//So the InputStream can use the same file
+		//Alternatively, the file will be closed once the stream goes out of scope
+	OutStream.close();
+
+	//Deserializing: 
+
+		//Note: binary mode ifstream
+		FInputFileStream InStream { SaveFileName, FFile::EFileOpenMode::Binary };
+		//Deserializer needs an ifstream
+		FBinaryDeserializer Deserializer { InStream };
+
+		FTestClass InData {};
+		//Will call into the Type's Serialize method like above to read in the saved values
+		Deserializer.Serialize(InData);
+
+	F_AssertEqual(OutData, InData, "Serialization of FTestClass failed");
+
+	return 0;
+}

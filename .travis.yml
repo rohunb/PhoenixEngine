@@ -1,0 +1,35 @@
+env:
+  global:
+   - secure: "dlklerlaFDismOigspTUg1NzyTOcDfASVhv6TdFtfuvK+SbQ0RVhB0wnpFmAYpxv5KQrKI+UcxIkYJ8nS4BoOtMoJXMTyAtkoTg7cp55dYyTMbnnPWEpJRTCZWHms39Ua/wll/AqWwnuXbOkFirCv3tOfYmKmj4qS4xorIroJRUvaA9vMCfG9RLMf6YSAQEXFnl1RE34fZD1L1+qs1OtUADlmsIW5P2SVGr+i0qtR+dmmBG8czymdzVdVqBQtlYas21H3EmsiyUn6ua9u4KSYlAJqr1R+9z/DmsZuSVefC25x8ltgIPq7F4EJLNnuOy7y/LtDYa4GsNlUk7AZ5mi7a2715J63ALk/C1H78XXkATtArLTaBt7VshpR0uBHMWwI1J1xjMAzvF5OK7trVgxno/h/UaKkIwVZOa35KsMrNu9py7L8CMKJAVwHw3DSYEsB1G70AqtiBxPIDhQxRSduynPNs9gVRGdo+d7qFX8B3drdmxhf2y7EjkN+PqyAPUeNF1L+mFB1i/xDkW1GANfzg58bVi9EQl1cI5f7JtaeNxR8mX2zEsroKbww/5SHs2DVFVdnQ8z1FmL1mvLb2QzxL6w2c82rfpsdXDVFu7ZRAFH9u2HQOLW7wD+mT86dhDe9rGGDkziUvaZ8Og8ZHjA97OzqUV8gnnbLuTX2TzeeQs="
+
+addons:
+  coverity_scan:
+    project:
+      name: "PhoenixOrg/PhoenixEngine"
+    notification_email: mitchdandrews@gmail.com
+    build_command_prepend:
+      - "brew install glfw3 glew bullet assimp"
+    build_command: "xcodebuild -workspace Solution/PhoenixEngine.xcworkspace -scheme Game -sdk macosx ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO"
+    branch_pattern: master
+
+language: objective-c
+
+compiler:
+- gcc
+
+osx_image: xcode6.4
+
+branches:
+  only:
+    - master
+    - Xcode
+    - Serialization
+
+before_install:
+  - brew install glfw3 glew bullet assimp
+
+script: xctool -workspace Solution/PhoenixEngine.xcworkspace -scheme Game -sdk macosx ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO
+
+notifications:
+  email:
+  - mitchdandrews@gmail.com
